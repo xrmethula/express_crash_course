@@ -8,6 +8,10 @@ const app = express();
 app.use(logger);
 
 
+//body parser middleware
+app.use(express.json());
+
+
 //members API routes
 app.use('/api/members', require('./routes/api/members'));
 
